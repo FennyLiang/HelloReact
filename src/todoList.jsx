@@ -10,20 +10,20 @@ export default class ToDoList extends React.Component {
       <ul>
         <li>
           <ToDoItem
-            itemName='Item1'
-            completed = {true}
+            itemName="Item1"
+            completed={true}
           />
         </li>
         <li>
           <ToDoItem
-            itemName='Item 2'
-            completed = {false}
+            itemName="Item 2"
+            completed={false}
           />
         </li>
         <li>
           <ToDoItem
             itemName="Item 3"
-            completed = {false}
+            completed={false}
           />
         </li>
       </ul>
