@@ -9,13 +9,22 @@ export default class ToDoList extends React.Component {
 
       <ul>
         <li>
-          <ToDoItem />
+          <ToDoItem
+            tilte='Item1'
+            completed = {true}
+          />
         </li>
         <li>
-          <ToDoItem />
+          <ToDoItem
+            tilte='Item 2'
+            completed = {false}
+          />
         </li>
         <li>
-          <ToDoItem />
+          <ToDoItem
+            tilte="Item 3"
+            completed = {false}
+          />
         </li>
       </ul>
 
