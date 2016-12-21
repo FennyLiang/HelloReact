@@ -4,30 +4,27 @@ import { PropTypes } from 'react'
 export default class ToDoItem extends React.Component {
 
   static propTypes = {
-    title: PropTypes.string,
+    taskName: PropTypes.string,
     completed: PropTypes.bool
   }
 
   static defaultProps = {
-    ToDoItem: {
-      title: '',
-      completed: false,
-    }
+    taskName: '123',
+    completed: false,
   }
 
   render() {
     const {
-      title,
+      taskName,
       completed
     } = this.props;
 
     return (
       <div>
-        <input type="checkbox" checked={completed}/>
-        <span>{title}</span>
+        <input type="checkbox" checked={completed} />
+        <span>{taskName}</span>
         <button>X</button>
       </div>
-
     );
 
   }
