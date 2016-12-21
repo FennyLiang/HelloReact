@@ -10,8 +10,12 @@ class HelloMessage extends React.Component{
 
     return (
       <div>
-        <TodoHeader />
-        <Inputfield />
+        <TodoHeader
+          title = "My todolist"
+          name = "Jonnan"
+          todoCount = {3}
+        />
+        <Inputfield placeholder="Let's work today!"/>
         <ToDoList />
       </div>
       );
